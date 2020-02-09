@@ -37,8 +37,13 @@ spring:
       indent-output: true
   data:
     mongodb:
-      uri: mongodb://localhost:27017
-      database: pms
+      #uri: mongodb://10.0.0.100:27017
+      uri: mongodb://pmsuser:pmsuser@10.0.0.100:27017/pms
+      #uri: mongodb://myUserAdmin:abc123@10.0.0.100:27017/admin
+      #database: admin
+      #username: pmsuser
+      #password: pmsuser
+      authentication-database: admin
   mail:
     host: localhost
     port: 25
